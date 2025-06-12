@@ -88,7 +88,7 @@ const HeroSection = () => {
 
     gsap.to(wheelRef.current, {
       rotate: -360,
-      duration: 5,
+      duration: 6,
       repeat: -1,
       ease: "linear",
     });

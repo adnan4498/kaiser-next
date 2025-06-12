@@ -16,13 +16,14 @@ export default function Home() {
   };
 
   const craftingBgStyle = {
-    backgroundImage: `url("/crafting-bg-lines.svg")`,
+    // backgroundImage: `url("/crafting-bg-lines.svg")`,
+    backgroundImage: `url("/grouped-lines.png")`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "1105px",
-    // backgroundColor : "#0f0f0f"
-    backgroundColor : "#121212"
+    // height: "1485px",
+    backgroundColor: "#121212",
   };
 
   return (
@@ -36,8 +37,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div style={craftingBgStyle} className='2xl:px-[62px]'>
-        <CraftingSection />
+      <div className="h-[1460px] bg-[#121212]">
+        <div style={craftingBgStyle} className="2xl:px-[62px]">
+          <CraftingSection />
+        </div>
       </div>
 
       <div className="">
