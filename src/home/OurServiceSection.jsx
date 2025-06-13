@@ -106,19 +106,19 @@ const OurServiceSection = () => {
       id: 0,
       img: furnitureImg,
       heading: "CUSTOM FURNITURE DESIGN",
-      text: "Lorem ipsum dolor sit amet...",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
     },
     {
       id: 1,
       img: furnitureImg,
       heading: "FULL INTERIOR DESIGN & CONSULTATION",
-      text: "Lorem ipsum dolor sit amet...",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
     },
     {
       id: 2,
       img: furnitureImg,
       heading: "SUSTAINABLE DESIGN SOLUTIONS",
-      text: "Lorem ipsum dolor sit amet...",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
     },
   ];
 
