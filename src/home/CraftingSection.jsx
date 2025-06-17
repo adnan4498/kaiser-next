@@ -101,54 +101,67 @@ const CraftingSection = () => {
 
   return (
     <div className="2xl:pt-[164px] ">
-      <div className="2xl:flex 2xl:gap-[66px]">
+      <div className="2xl:flex 2xl:gap-[66px] 3xl:gap-[75px] 3xl:justify-between">
         {/* <div className="bg-white pt-[16px] pl-[16px] inline-block"> */}
-        <div className="border-t-[16px] border-l-[16px] border-[#D9D9D9] inline-block 2xl:h-[880]">
-          <Image src={craftingImg} width={642} height={863} />
+        <div className="border-t-[16px] border-l-[16px] border-[#D9D9D9] 3xl:border-t-[20px] 3xl:border-l-[20px] inline-block 2xl:h-[880px] 3xl:h-[1070px]">
+          <Image
+            src={craftingImg}
+            width={642}
+            height={863}
+            className="w-[642px] 3xl:w-[780px] h-auto"
+          />
         </div>
 
         <div>
-          <div className="2xl:text-[20px]">About Us</div>
-          <div className="2xl:w-[551px] 2xl:h-[192px] 2xl:text-[64px] 2xl:leading-[64px] 2xl:tracking-tighter 2xl:mt-[23px]">
+          <div className="2xl:text-[20px] 3xl:text-[25px]">About Us</div>
+          <div className="2xl:w-[551px] 3xl:w-[850px] 2xl:h-[192px] 2xl:text-[64px] 3xl:text-[75px] 2xl:leading-[64px] 3xl:leading-[70px] 2xl:tracking-tighter 2xl:mt-[23px]">
             CRAFTING TIMELESS FURNITURE AND INTERIOR DESIGNS
           </div>
-          <div className="2xl:text-[16px] 2xl:leading-[16px] 2xl:w-[376px] 2xl:mt-[54px]">
+          <div className="2xl:text-[16px] 2xl:leading-[16px] 2xl:w-[376px] 2xl:mt-[54px] 3xl:text-[18px] 3xl:leading-[20px] 3xl:w-[520px] 3xl:mt-[64px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo.
           </div>
 
-          <div className="2xl:mt-[139px]">
-            <div className="2xl:flex gap-[54px]">
-              <div className="flex gap-[20px] items-center">
+          <div className="2xl:mt-[139px] 3xl:mt-[160px]">
+            <div className="2xl:flex gap-[54px] 3xl:gap-[64px]">
+              <div className="flex gap-[20px] 3xl:gap-[24px] items-center">
                 <div>
                   <Image src={qualityIcon} width={41} height={33} />
                 </div>
-                <div className="2xl:text-[16px]">Quality Craftsmanship</div>
+                <div className="2xl:text-[16px] 3xl:text-[18px]">
+                  Quality Craftsmanship
+                </div>
               </div>
 
-              <div className="flex gap-[20px] items-center">
+              <div className="flex gap-[20px] 3xl:gap-[24px] items-center">
                 <div>
                   <Image src={sustainIcon} width={41} height={33} />
                 </div>
-                <div className="2xl:text-[16px]">Sustainability</div>
+                <div className="2xl:text-[16px] 3xl:text-[18px]">
+                  Sustainability
+                </div>
               </div>
             </div>
 
-            <div className="flex gap-[54px] 2xl:mt-[54px]">
-              <div className="flex gap-[20px] items-center">
+            <div className="flex gap-[54px] 3xl:gap-[64px] 2xl:mt-[54px] 3xl:mt-[64px]">
+              <div className="flex gap-[20px] 3xl:gap-[24px] items-center">
                 <div>
                   <Image src={inovationIcon} width={41} height={33} />
                 </div>
-                <div className="2xl:text-[16px]">Innovation & Creativity</div>
+                <div className="2xl:text-[16px] 3xl:text-[18px]">
+                  Innovation & Creativity
+                </div>
               </div>
 
-              <div className="flex gap-[20px] items-center">
+              <div className="flex gap-[20px] 3xl:gap-[24px] items-center">
                 <div>
                   <Image src={customerServingIcon} width={41} height={33} />
                 </div>
-                <div className="2xl:text-[16px]">Customer-Centered</div>
+                <div className="2xl:text-[16px] 3xl:text-[18px]">
+                  Customer-Centered
+                </div>
               </div>
             </div>
           </div>
@@ -233,10 +246,9 @@ const CraftingSection = () => {
         </div>
       </div>
 
-      <div className="">
-        {/* <div className=" 2xl:w-[110%] 2xl:h-[150px] 2xl:absolute 2xl:right-[0px] 2xl:top-[50px]"> */}
+      <div className="3xl:!pt-[40px]">
         <div className="">
-          <div className="overflow-hidden bg-black py-2 2xl:my-[120px] rotate-[-3.4deg] 2xl:w-[120%] 2xl:relative 2xl:left-[-100px] 2xl:top-[-40px]">
+          <div className="overflow-hidden bg-black py-2 2xl:my-[120px] rotate-[-3.4deg] 2xl:w-[120%] 2xl:relative 2xl:left-[-208px] 3xl:left-[-295px] 2xl:top-[-40px]">
             <div
               className="w-fit whitespace-nowrap 2xl:text-[51px] italic text-white"
               ref={kesarMarquee1}
@@ -250,7 +262,7 @@ const CraftingSection = () => {
             </div>
           </div>
 
-          <div className="overflow-hidden bg-black py-2 2xl:my-[120px] rotate-[9.5deg] 2xl:w-[120%] 2xl:relative 2xl:left-[-100px] 2xl:top-[-170px]">
+          <div className="overflow-hidden bg-black py-2 2xl:my-[120px] rotate-[9.5deg] 2xl:w-[120%] 2xl:relative 2xl:left-[-208px] 3xl:left-[-295px] 2xl:top-[-170px]">
             <div
               className="w-fit whitespace-nowrap 2xl:text-[51px] italic text-white"
               ref={kesarMarquee2}

@@ -6,6 +6,8 @@ import magicWandImg from "../../public/magic-wand.svg";
 import { gsap } from "gsap";
 
 const OurServiceSection = () => {
+  const [is3xl, setIs3xl] = useState(false);
+
   const wandRef = useRef();
   const boxRef = useRef();
   const overlayRefs = useRef([]);
@@ -91,12 +93,20 @@ const OurServiceSection = () => {
         });
       };
 
+      const handleResize = () => {
+        setIs3xl(window.innerWidth >= 1600);
+      };
+
+      handleResize(); // initial check
+      window.addEventListener("resize", handleResize);
+
       parent.addEventListener("mouseenter", onEnter);
       parent.addEventListener("mouseleave", onLeave);
 
       return () => {
         parent.removeEventListener("mouseenter", onEnter);
         parent.removeEventListener("mouseleave", onLeave);
+        window.removeEventListener("resize", handleResize);
       };
     });
   }, []);
@@ -152,33 +162,47 @@ const OurServiceSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="2xl:pt-[202px] 2xl:relative">
+    <div className="2xl:pt-[202px] 3xl:pt-[240px] 2xl:relative">
       <div
-        className="2xl:absolute 2xl:right-[100px] 2xl:top-[53px]"
+        className="2xl:absolute 2xl:right-[100px] 2xl:top-[53px] 3xl:right-[120px] 3xl:top-[70px]"
         ref={boxRef}
       >
-        <Image src={rectangleImg} width={220} height={220} />
+        <Image
+          src={rectangleImg}
+          width={220}
+          height={220}
+          className="3xl:w-[250px] 3xl:h-[250px]"
+        />
       </div>
-      <div
-        className="2xl:absolute 2xl:top-[170px] 2xl:right-[-105px]"
-        ref={wandRef}
-      >
-        <Image src={magicWandImg} width={250} height={100} />
-      </div>
+
+        <div
+          className="2xl:absolute 2xl:top-[170px] 2xl:right-[-55px] 3xl:top-[230px] 3xl:right-[-95px] overflow-hidden"
+          ref={wandRef}
+        >
+          <Image
+            src={magicWandImg}
+            width={250}
+            height={100}
+            alt="magic wand"
+            // className="3xl:w-[430px] 3xl:h-auto"
+          />
+        </div>
 
       <div>
         <div>
-          <div className="2xl:text-[20px]">OurServiceSection</div>
-          <div className="2xl:w-[882px] 2xl:mt-[23px] 2xl:tracking-tighter 2xl:text-[64px] 2xl:leading-[64px]">
+          <div className="2xl:text-[20px] 3xl:text-[24px]">
+            OurServiceSection
+          </div>
+          <div className="2xl:w-[882px] 3xl:w-[1180px] 2xl:mt-[23px] 3xl:mt-[28px] 2xl:tracking-tighter 2xl:text-[64px] 3xl:text-[72px] 2xl:leading-[64px] 3xl:leading-[72px]">
             CUSTOM FURNITURE & TAILORED INTERIOR SOLUTIONS
           </div>
         </div>
 
-        <div className="2xl:flex gap-[79px]">
+        <div className="2xl:flex 3xl:justify-center gap-[79px] 3xl:gap-[96px]">
           {furnitureCards.map((item, index) => (
             <div
               key={index}
-              className="2xl:mt-[128px] 2xl:flex flex-col gap-[35px]"
+              className="2xl:mt-[128px] 3xl:mt-[144px] 2xl:flex flex-col gap-[35px] 3xl:gap-[40px]"
             >
               <div>
                 <Image
@@ -186,32 +210,35 @@ const OurServiceSection = () => {
                   width={385}
                   height={274}
                   alt={item.heading}
+                  className="3xl:w-[430px] 3xl:h-auto"
                 />
               </div>
-              <div className="2xl:text-[32px] 2xl:w-[381px] 2xl:tracking-tighter 2xl:leading-[32px]">
+              <div className="2xl:text-[32px] 3xl:text-[36px] 2xl:w-[381px] 3xl:w-[420px] 2xl:tracking-tighter 2xl:leading-[32px] 3xl:leading-[36px]">
                 {item.heading}
               </div>
-              <div className="2xl:w-[381px] 2xl:text-[16px] 2xl:leading-[24px] 2xl:min-h-[144px]">
+              <div className="2xl:w-[381px] 3xl:w-[420px] 2xl:text-[16px] 3xl:text-[18px] 2xl:leading-[24px] 3xl:leading-[28px] 2xl:min-h-[144px] 3xl:min-h-[160px]">
                 {item.text}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="2xl:mt-[137px] 2xl:text-center">
-          <div className="2xl:text-[20px] font-semibold">Our Work</div>
-          <div className="2xl:flex justify-center 2xl:mt-[23px]">
-            <div className="2xl:w-[995px] 2xl:text-[64px] 2xl:leading-[64px] 2xl:tracking-tighter">
+        <div className="2xl:mt-[137px] 3xl:mt-[160px] 2xl:text-center">
+          <div className="2xl:text-[20px] 3xl:text-[24px] font-semibold">
+            Our Work
+          </div>
+          <div className="2xl:flex justify-center 2xl:mt-[23px] 3xl:mt-[28px]">
+            <div className="2xl:w-[995px] 3xl:w-[1080px] 2xl:text-[64px] 3xl:text-[72px] 2xl:leading-[64px] 3xl:leading-[72px] 2xl:tracking-tighter">
               EXQUISITE CUSTOM FURNITURE AND INTERIOR DESIGNS TAILORED TO YOU
             </div>
           </div>
         </div>
 
-        <div className="2xl:mt-[97px] 2xl:pb-[120px]">
+        <div className="2xl:mt-[97px] 3xl:mt-[110px] 2xl:pb-[120px] 3xl:pb-[140px]">
           {modernUrbanData.map((item, index) => (
             <div
               key={index}
-              className="relative  border-t border-gray-400"
+              className="relative border-t border-gray-400"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -233,11 +260,11 @@ const OurServiceSection = () => {
 
               <div
                 ref={(el) => (urbanDivRefs.current[index] = el)}
-                className="relative z-10 2xl:flex items-center justify-between 2xl:py-[22px]"
+                className="relative z-10 2xl:flex items-center justify-between 2xl:py-[22px] 3xl:py-[26px]"
               >
                 <div>
                   <div
-                    className={`text-[12px] 2xl:w-[109px] 2xl:h-[47px] border-2 border-gray-500 rounded-full flex justify-center items-center transition duration-300 ${
+                    className={`text-[12px] 2xl:w-[109px] 3xl:w-[124px] 2xl:h-[47px] 3xl:h-[52px] border-2 border-gray-500 rounded-full flex justify-center items-center transition duration-300 ${
                       hoveredIndex === index
                         ? "bg-white !text-black"
                         : "bg-transparent text-white"
@@ -245,11 +272,11 @@ const OurServiceSection = () => {
                   >
                     <div>{item.btnName}</div>
                   </div>
-                  <div className="2xl:text-[28px] 2xl:mt-[27px] 2xl:font-bold">
+                  <div className="2xl:text-[28px] 3xl:text-[32px] 2xl:mt-[27px] 3xl:mt-[32px] 2xl:font-bold">
                     {item.heading}
                   </div>
                 </div>
-                <div className="2xl:text-[15px] 2xl:leading-[28px] 2xl:w-[504px]">
+                <div className="2xl:text-[15px] 3xl:text-[17px] 2xl:leading-[28px] 3xl:leading-[30px] 2xl:w-[504px] 3xl:w-[560px]">
                   {item.text}
                 </div>
               </div>

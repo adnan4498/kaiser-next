@@ -7,22 +7,22 @@ import Footer from "@/shared/Footer";
 import CraftingSection from "@/home/CraftingSection";
 
 const HomePage = () => {
-
-    const craftingBgStyle = {
-    // backgroundImage: `url("/crafting-bg-lines.svg")`,
+  const craftingBgStyle = {
     backgroundImage: `url("/grouped-lines.png")`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "1105px",
-    // height: "1485px",
     backgroundColor: "#121212",
   };
 
   return (
     <div>
-      <div className="h-[1460px] bg-[#121212]">
-        <div style={craftingBgStyle} className="2xl:px-[62px]">
+      <div className="h-[1460px] 3xl:h-[1700px] bg-[#121212]">
+        <div
+          style={craftingBgStyle}
+          className=" 2xl:h-[1105px] 3xl:!h-[1290px] 2xl:px-[62px]"
+        >
           <CraftingSection />
         </div>
       </div>

@@ -69,9 +69,9 @@ const Navbar = () => {
         <div className="2xl:flex 2xl:gap-14 ">
           <div className="2xl:text-[20px] 2xl:text-white flex  2xl:gap-16">
             <div>Home</div>
-            <div className="2xl:flex 2xl:gap-3">
+            <div className="2xl:flex 2xl:gap-3 ">
               <div className="">Product</div>
-              <div className="2xl:flex 2xl:items-center">
+              <div className="2xl:flex 2xl:items-center pb-2">
                 <Image src={downVector} width={18} height={10} />
               </div>
             </div>
