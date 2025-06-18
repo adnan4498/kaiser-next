@@ -176,7 +176,7 @@ const OurServiceSection = () => {
       </div>
 
         <div
-          className="2xl:absolute 2xl:top-[170px] 2xl:right-[-55px] 3xl:top-[230px] 3xl:right-[-95px] overflow-hidden"
+          className="2xl:absolute 2xl:top-[200px] 2xl:right-[-55px] 3xl:top-[230px] 3xl:right-[-55px] overflow-hidden"
           ref={wandRef}
         >
           <Image
@@ -184,7 +184,7 @@ const OurServiceSection = () => {
             width={250}
             height={100}
             alt="magic wand"
-            // className="3xl:w-[430px] 3xl:h-auto"
+            className="2xl:w-[220px] 3xl:w-[250px]"
           />
         </div>
 
@@ -228,7 +228,7 @@ const OurServiceSection = () => {
             Our Work
           </div>
           <div className="2xl:flex justify-center 2xl:mt-[23px] 3xl:mt-[28px]">
-            <div className="2xl:w-[995px] 3xl:w-[1080px] 2xl:text-[64px] 3xl:text-[72px] 2xl:leading-[64px] 3xl:leading-[72px] 2xl:tracking-tighter">
+            <div className="2xl:w-[995px] 3xl:w-[1180px] 2xl:text-[64px] 3xl:text-[72px] 2xl:leading-[64px] 3xl:leading-[72px] 2xl:tracking-tighter">
               EXQUISITE CUSTOM FURNITURE AND INTERIOR DESIGNS TAILORED TO YOU
             </div>
           </div>
@@ -274,7 +274,7 @@ const OurServiceSection = () => {
                   </div>
                   <div className="2xl:text-[28px] 3xl:text-[32px] 2xl:mt-[27px] 3xl:mt-[32px] 2xl:font-bold">
                     {item.heading}
-                  </div>
+                  </div>    
                 </div>
                 <div className="2xl:text-[15px] 3xl:text-[17px] 2xl:leading-[28px] 3xl:leading-[30px] 2xl:w-[504px] 3xl:w-[560px]">
                   {item.text}

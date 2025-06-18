@@ -248,7 +248,7 @@ const CraftingSection = () => {
 
       <div className="3xl:!pt-[40px]">
         <div className="">
-          <div className="overflow-hidden bg-black py-2 2xl:my-[120px] rotate-[-3.4deg] 2xl:w-[120%] 2xl:relative 2xl:left-[-208px] 3xl:left-[-295px] 2xl:top-[-40px]">
+          <div className="overflow-hidden bg-black py-2 2xl:my-[120px] rotate-[-3.4deg] 2xl:w-[120%] 2xl:relative 2xl:left-[-205px] 3xl:left-[-295px] 2xl:top-[-40px]">
             <div
               className="w-fit whitespace-nowrap 2xl:text-[51px] italic text-white"
               ref={kesarMarquee1}
@@ -262,7 +262,7 @@ const CraftingSection = () => {
             </div>
           </div>
 
-          <div className="overflow-hidden bg-black py-2 2xl:my-[120px] rotate-[9.5deg] 2xl:w-[120%] 2xl:relative 2xl:left-[-208px] 3xl:left-[-295px] 2xl:top-[-170px]">
+          <div className="overflow-hidden bg-black py-2 2xl:my-[120px] rotate-[9.5deg] 2xl:w-[120%] 2xl:relative 2xl:left-[-200px] 3xl:left-[-287px] 2xl:top-[-170px]">
             <div
               className="w-fit whitespace-nowrap 2xl:text-[51px] italic text-white"
               ref={kesarMarquee2}
