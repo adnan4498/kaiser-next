@@ -21,7 +21,7 @@ const HomePage = () => {
       <div className="h-[1460px] 3xl:h-[1700px] bg-[#121212]">
         <div
           style={craftingBgStyle}
-          className=" 2xl:h-[1105px] 3xl:!h-[1290px] 2xl:px-[62px]"
+          className=" 2xl:h-[1105px] 3xl:!h-[1290px] px-[62px]"
         >
           <CraftingSection />
         </div>
@@ -31,7 +31,7 @@ const HomePage = () => {
         <VideoSection />
       </div>
 
-      <div className="bg-[#121212] 2xl:px-[62px]  ">
+      <div className="bg-[#121212] px-[62px]  ">
         <OurServiceSection />
       </div>
 
@@ -43,7 +43,7 @@ const HomePage = () => {
         <MarketingSection />
       </div>
 
-      <div className="2xl:px-[62px] bg-[#121212]">
+      <div className="px-[62px] bg-[#121212]">
         <Footer />
       </div>
     </div>

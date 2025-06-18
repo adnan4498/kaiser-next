@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="2xl:pt-[121px] 3xl:pt-[140px] pb-[23px]">
       <div className="2xl:flex 3xl:justify-between gap-[286px] 3xl:gap-[340px]">
-        <div className="2xl:flex gap-[83px] 3xl:gap-[96px] 2xl:text-[16px] 3xl:text-[18px] 2xl:tracking-tight">
+        <div className="2xl:flex gap-[83px] 3xl:gap-[96px] 2xl:text-[16px] 3xl:text-[19px] 2xl:tracking-tight">
           <div className="2xl:flex 2xl:flex-col gap-2">
             <div>Home</div>
             <div>Works</div>

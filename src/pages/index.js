@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <>
       <div style={navbarBgStyle}>
-        <div className="2xl:pt-[40px] 2xl:px-[62px]">
+        <div className="2xl:pt-[40px] px-[62px]">
           <Navbar />
         </div>
-        <div className="2xl:px-[62px]">
+        <div className="px-[62px]">
           <HeroSection />
         </div>
       </div>
